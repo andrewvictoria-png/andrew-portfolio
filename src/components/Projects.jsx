@@ -5,7 +5,7 @@ const Projects = () => {
   const [projects, setProjects] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  // Fetch projects from Supabase on component mount
+
   useEffect(() => {
     const fetchProjects = async () => {
       try {

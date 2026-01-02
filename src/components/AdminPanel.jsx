@@ -11,8 +11,7 @@ const AdminPanel = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [pin, setPin] = useState("");
   const [loading, setLoading] = useState(false);
-  
-  // Data States
+
   const [profile, setProfile] = useState({ 
     id: null, name: '', bio_prefix: '', role: '', school: '', profile_img: '', theme_color: '' 
   });
@@ -38,7 +37,6 @@ const AdminPanel = () => {
     if (proj) setProjects(proj || []);
   };
 
-  // --- IMAGE UPLOAD LOGIC ---
   const uploadImage = async (file, folder) => {
     const fileExt = file.name.split('.').pop();
     const fileName = `${Math.random()}.${fileExt}`;
@@ -75,7 +73,6 @@ const AdminPanel = () => {
     setLoading(false);
   };
 
-  // --- SAVE HANDLERS ---
   const handleUpdateProfile = async () => {
     if (!profile.id) return alert("System Error: Profile ID missing. Refresh page.");
     setLoading(true);

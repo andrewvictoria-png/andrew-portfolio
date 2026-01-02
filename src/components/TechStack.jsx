@@ -1,5 +1,5 @@
 import React from 'react';
-/* Importing specific icons from reliable sets */
+
 import { 
   DiHtml5, 
   DiCss3, 

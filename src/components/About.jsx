@@ -13,7 +13,7 @@ const About = () => {
   const [displayText, setDisplayText] = useState("");
   const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789@#$%^&*";
 
-  // 1. Fetch Profile Data from Supabase
+
   useEffect(() => {
     const fetchProfileData = async () => {
       const { data, error } = await supabase
@@ -31,7 +31,7 @@ const About = () => {
     fetchProfileData();
   }, []);
 
-  // 2. Hacker/Typing Animation Effect
+
   useEffect(() => {
     if (!profile.name || profile.name === "Loading...") return;
 
