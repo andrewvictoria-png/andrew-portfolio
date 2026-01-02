@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { supabase } from './supabaseClient';
 import './index.css';
 
-// Components
+
 import Navbar from './components/Navbar';
 import About from './components/About';
 import TechStack from './components/TechStack';

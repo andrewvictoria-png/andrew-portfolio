@@ -4,7 +4,7 @@ import { Sun, Moon } from 'lucide-react';
 const Navbar = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
-  // Effect to apply the theme class to the body tag
+
   useEffect(() => {
     if (isDarkMode) {
       document.body.classList.add('dark-mode');
